@@ -8,9 +8,6 @@ export default defineConfig({
     port: 5173,
   },
   build: {
-    outDir: 'dist',
-    rollupOptions: {
-      external: ['react-text-gradients'],
-    },
+    outDir: 'dist'
   },
 })
