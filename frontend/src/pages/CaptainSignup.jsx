@@ -4,6 +4,7 @@ import { captainContextAtom } from "../store/atom/CaptainContext";
 import { useRecoilState } from "recoil";
 import axios from "axios";
 import { API_URL } from "../utils/constants";
+import Navbar from "../components/Navbar";
 
 const CaptainSignup = () => {
     const [formData, setFormData] = useState({
@@ -78,6 +79,8 @@ const CaptainSignup = () => {
     };
 
     return (
+        <div>
+            <Navbar />
         <div className="relative h-[90vh] flex items-center flex-col justify-center">
             <img className="absolute top-0 left-0 h-10 p-1 ml-2 my-5" src="/GoRide2.png" alt="Logo" />
             <div className="flex flex-col items-center justify-center bg-gray-50">
@@ -200,6 +203,7 @@ const CaptainSignup = () => {
                     Sign in as User
                 </button>
             </Link>
+        </div>
         </div>
     );
 };
