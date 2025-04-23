@@ -1,5 +1,6 @@
 
 const allowedOrigins = [
+    'https://go-ride-sigma.vercel.app',
     'http://localhost:5173'
 ];
 
