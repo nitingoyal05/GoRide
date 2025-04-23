@@ -4,7 +4,8 @@ import axios from "axios";
 import { API_URL } from "../utils/constants";
 import { useRecoilState } from "recoil";
 import { userContextAtom } from "../store/atom/UserContext";
-import image from '../assets/GoRide2.png';
+import Navbar from "../components/Navbar";
+// import image from '../assets/GoRide2.png';
 
 const UserLogin = ({message}) => {
     const [email, setEmail] = useState('');
@@ -46,10 +47,12 @@ const UserLogin = ({message}) => {
         setEmail('');
     }
     return (
-        <div className="relative h-[100vh] flex items-center flex-col justify-center bg-gray-100">
+        <div>
 
+        <Navbar/>
+        <div className="relative h-[80vh] flex items-center flex-col justify-center bg-gray-100">
             {/* Content */}
-            <img className="absolute top-0 left-0 h-10 p-1 ml-2 my-5" src={image} alt="Logo" />
+            {/* <img className="absolute top-0 left-0 h-10 p-1 ml-2 my-5" src={image} alt="Logo" /> */}
 
             <div className="flex items-center justify-center w-full px-4">
                 <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-md">
@@ -129,6 +132,8 @@ const UserLogin = ({message}) => {
                 <Link to='/captain/register' className="w-full bg-gray-200 px-10 py-2 rounded-lg font-semibold text-lg hover:bg-black hover:text-white transition-all duration-200">SignIn as a Captain</Link>
             </div>
         </div>
+        </div>
+
     )
 };
 
