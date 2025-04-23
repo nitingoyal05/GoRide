@@ -4,6 +4,7 @@ import axios from "axios";
 import { API_URL } from "../utils/constants";
 import { useRecoilState } from "recoil";
 import { userContextAtom } from "../store/atom/UserContext";
+import image from '../assets/GoRide2.png';
 
 const UserLogin = ({message}) => {
     const [email, setEmail] = useState('');
@@ -48,7 +49,7 @@ const UserLogin = ({message}) => {
         <div className="relative h-[100vh] flex items-center flex-col justify-center bg-gray-100">
 
             {/* Content */}
-            <img className="absolute top-0 left-0 h-10 p-1 ml-2 my-5" src="GoRide2.png" alt="Logo" />
+            <img className="absolute top-0 left-0 h-10 p-1 ml-2 my-5" src={image} alt="Logo" />
 
             <div className="flex items-center justify-center w-full px-4">
                 <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-md">
