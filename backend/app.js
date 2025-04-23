@@ -29,7 +29,7 @@ app.use(cookieParser());
 
 
 app.get("/" , (req, res)=>{
-res.send("Hello world Abhi Here !");
+res.send("Hello world Nitin Here !");
 })
 
 app.use('/user', userRouter);
