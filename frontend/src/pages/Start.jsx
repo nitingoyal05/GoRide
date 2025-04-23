@@ -52,7 +52,7 @@ const Start = () => {
           
                 <h1 className="font-bold text-5xl  ">Go <LinearGradient gradient={['to left', '#17acff, #a17fe0']}>
              Anywhere
-            </LinearGradient> with  <br /><span className="font-sans">Uber</span></h1>
+            </LinearGradient> with  <br /><span className="font-sans">GoRide</span></h1>
                 <Form setDestinationCoordinates={setDestinationCoordinates} setPickupCoordinates={setPickupCoordinates} />
                 <button 
               onClick={(e)=>{
