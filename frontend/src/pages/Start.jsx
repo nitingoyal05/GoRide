@@ -48,7 +48,7 @@ const Start = () => {
       <Navbar />
       <div className="flex flex-col md:flex-row items-start justify-start md:items-center md:justify-center  min-h-[80vh]">
         {/* Left Div */}
-        <div className="w-full z-[10] rounded-lg  bg-gray-50 md:w-[40vw] flex flex-col gap-5 border-1 border-slate-300  dark:bg-gray-950 m-2 py-10 ">
+        <div className="w-full p-8 z-[10] rounded-lg  bg-gray-50 md:w-[40vw] flex flex-col gap-5 border-1 border-slate-300  dark:bg-gray-950 m-2 py-10 ">
           
                 <h1 className="font-bold text-5xl  ">Go <LinearGradient gradient={['to left', '#17acff, #a17fe0']}>
              Anywhere

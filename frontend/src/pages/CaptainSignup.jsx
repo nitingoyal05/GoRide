@@ -82,7 +82,7 @@ const CaptainSignup = () => {
         <div>
             <Navbar />
         <div className="relative h-[90vh] flex items-center flex-col justify-center">
-            <img className="absolute top-0 left-0 h-10 p-1 ml-2 my-5" src="/GoRide2.png" alt="Logo" />
+            {/* <img className="absolute top-0 left-0 h-10 p-1 ml-2 my-5" src="/GoRide2.png" alt="Logo" /> */}
             <div className="flex flex-col items-center justify-center bg-gray-50">
                 <div className="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-md">
                     <h2 className="text-center text-3xl font-bold text-gray-900">Register as Captain</h2>
